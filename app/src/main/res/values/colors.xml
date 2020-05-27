@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="bg_weapon">#D23F3F</color>
+    <color name="bg_targeman">#D19760</color>
+    <color name="bg_marksman">#BFA95D</color>
+    <color name="bg_elementalist">#23A723</color>
+    <color name="bg_mage">#3293FB</color>
+    <color name="bg_guardian">#5DB0B8</color>
+    <color name="bg_summoner">#6882F4</color>
+    <color name="bg_wrestler">#FD6EB0</color>
+    <color name="bg_assassins">#C379FB</color>
+    <color name="bg_elf">#33A765</color>
+    <color name="bg_desert">#A75C2B</color>
+    <color name="bg_eruditio">#CB7857</color>
+    <color name="bg_cyborg">#4770AA</color>
+    <color name="bg_demon">#A7334C</color>
+    <color name="bg_dragon">#C2A12E</color>
+    <color name="bg_monastery">#B07F45</color>
+    <color name="bg_north">#747884</color>
+    <color name="bg_abyss">#AA3636</color>
+    <color name="bg_celestial">#5E6EA8</color>
+    <color name="bg_empire">#A3A337</color>
+    <color name="bg_black">#333333</color>
+    <color name="bg_5_star">#D66C2B</color>
+    <color name="bg_4_star">#9123D1</color>
+    <color name="bg_3_star">#3B67B9</color>
+    <color name="bg_2_star">#427846</color>
+    <color name="bg_1_star">#797E85</color>
+    <color name="text_inverse">#FFFFFF</color>
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.luc.mobilelegends.ui.holder.TypeHolder" />
+
+
+        <variable
+            name="handler"
+            type="com.luc.mobilelegends.core.BaseListAdapter.Holder" />
+
+        <variable
+            name="position"
+            type="Integer" />
+    </data>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="@{model.selected? 1F : 0.5F}"
+        android:onClick="@{(v) -> handler.onClick(v, position)}"
+        android:padding="@dimen/space"
+        android:text="@{model.data.name}"
+        android:textColor="@color/text_inverse"
+        app:color="@{model.getColor()}"
+        app:isBold="@{model.selected}"
+        tools:text="Type" />
+</layout>

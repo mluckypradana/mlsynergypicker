@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Mobile Legends Synergy Picker</string>
+    <string name="label_recommended_matches">Recommended Matches</string>
+    <string name="label_matches">Matches</string>
+</resources>
