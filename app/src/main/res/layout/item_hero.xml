@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
 
@@ -20,11 +20,13 @@
     </data>
 
     <TextView
+        android:alpha="@{model.picked? 0.5F : 1F}"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="@{(v) -> handler.onClick(v, position)}"
+        android:textColor="@color/text_inverse"
         android:padding="@dimen/space"
         android:text="@{model.data.name}"
-        android:textColor="@color/text_inverse"
         app:color="@{model.getColor()}"
         tools:text="Hero Name" />
 </layout>

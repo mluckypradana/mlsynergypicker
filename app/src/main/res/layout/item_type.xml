@@ -20,14 +20,14 @@
     </data>
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:alpha="@{model.selected? 1F : 0.5F}"
+        app:isBold="@{model.selected}"
+        android:layout_width="match_parent"
+        android:textColor="@color/text_inverse"
+        android:layout_height="wrap_content"
         android:onClick="@{(v) -> handler.onClick(v, position)}"
         android:padding="@dimen/space"
         android:text="@{model.data.name}"
-        android:textColor="@color/text_inverse"
         app:color="@{model.getColor()}"
-        app:isBold="@{model.selected}"
         tools:text="Type" />
 </layout>

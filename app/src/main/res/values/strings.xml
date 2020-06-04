@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">Mobile Legends Synergy Picker</string>
-    <string name="label_recommended_matches">Recommended Matches</string>
-    <string name="label_matches">Matches</string>
+    <string name="label_recommended_matches">Recommended Heroes</string>
+    <string name="label_matches">Heroes</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="label_recommended_item">Recommended Item</string>
+    <string name="label_synergies">Synergies</string>
 </resources>
