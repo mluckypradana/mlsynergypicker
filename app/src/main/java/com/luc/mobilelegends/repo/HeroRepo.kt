@@ -44,7 +44,6 @@ class HeroRepo() : CoreRepo() {
         Hero("Chou", 1, listOf(WRESTLER, ERUDITIO), PHYSICAL),
         Hero("Jawhead", 2, listOf(WRESTLER, CYBORG), PHYSICAL),
         Hero("Carmila", 2, listOf(WRESTLER, DEMON), TANK),
-        Hero("Carmila", 2, listOf(WRESTLER, DEMON), TANK),
         Hero("Dyroth", 3, listOf(WRESTLER, ABYSS), PHYSICAL),
         Hero("Gatotkaca", 5, listOf(WRESTLER, CELESTIAL), TANK),
         Hero("Guinevere", 4, listOf(WRESTLER, EMPIRE), MAGICAL),

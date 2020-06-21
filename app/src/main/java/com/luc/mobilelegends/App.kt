@@ -1,6 +1,7 @@
 package com.luc.mobilelegends
 
 import android.app.Application
+import com.google.android.gms.ads.MobileAds
 import com.luc.mobilelegends.core.BaseViewModel
 import com.luc.mobilelegends.repo.HeroRepo
 import com.luc.mobilelegends.repo.TypeRepo
@@ -29,6 +30,8 @@ class App : Application() {
                 modules(vmModule)
                 modules(repoModule)
             }
+
+        MobileAds.initialize(this)
         super.onCreate()
     }
 }

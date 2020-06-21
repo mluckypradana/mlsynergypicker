@@ -15,6 +15,7 @@ import org.koin.core.inject
 
 class MainVm(context: Application) : BaseViewModel(context) {
     private lateinit var recommendedHolders: MutableList<HeroHolder>
+    private lateinit var heroHolders: MutableList<HeroHolder>
     private lateinit var typeHolders: MutableList<TypeHolder>
     private val types: List<Type>
     val heroes: MutableList<Hero> = mutableListOf()
@@ -72,6 +73,19 @@ class MainVm(context: Application) : BaseViewModel(context) {
             recommendedHolders[position].picked.set(!selected)
             selectedHeroes.add(recommendedHeroes[position])
         }
+        heroAdapter.onItemClick = { _, position ->
+            heroes.get(position).types.forEach { typeId ->
+                val existingType = selectedTypes.find { it.id == typeId }
+                if (existingType == null)
+                    types.find { it.id == typeId }?.let {
+                        selectedTypes.add(it)
+                        typeHolders.find {
+                            it.data.id==typeId
+                        }?.selected?.set(true)
+                    }
+                updateFilter()
+            }
+        }
     }
 
     private fun updateFilter() {
@@ -96,6 +110,7 @@ class MainVm(context: Application) : BaseViewModel(context) {
                 )
             )
         }
+        synergyHolders.sortByDescending { it.total }
         synergyAdapter.items = synergyHolders
         synergyAdapter.notifyDataSetChanged()
 
@@ -103,7 +118,8 @@ class MainVm(context: Application) : BaseViewModel(context) {
         if (selectedTypes.isNotEmpty())
             heroes.addAll(heroRepo.getMatchesByType(selectedTypes))
         heroes.removeAll(recommendedHeroes)
-        heroAdapter.items = getHeroHolders(heroes)
+        heroHolders = getHeroHolders(heroes)
+        heroAdapter.items = heroHolders
         heroAdapter.notifyDataSetChanged()
 
         var physicalTotal = 0
