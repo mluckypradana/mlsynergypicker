@@ -132,11 +132,10 @@
 
         <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
             android:id="@+id/adView"
-            android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             ads:adSize="BANNER"
-            ads:adUnitId="ca-app-pub-5515586326829880/4391199906" />
+            ads:adUnitId="ca-app-pub-7388196415239987/8147509876" />
 
     </LinearLayout>
 </layout>

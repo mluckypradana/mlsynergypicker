@@ -80,7 +80,7 @@ class MainVm(context: Application) : BaseViewModel(context) {
                     types.find { it.id == typeId }?.let {
                         selectedTypes.add(it)
                         typeHolders.find {
-                            it.data.id==typeId
+                            it.data.id == typeId
                         }?.selected?.set(true)
                     }
                 updateFilter()
@@ -144,7 +144,7 @@ class MainVm(context: Application) : BaseViewModel(context) {
         itemAdapter.notifyDataSetChanged()
     }
 
-    fun getHeroHolders(heroes: MutableList<Hero>): MutableList<HeroHolder> {
+    private fun getHeroHolders(heroes: MutableList<Hero>): MutableList<HeroHolder> {
         val holders = mutableListOf<HeroHolder>()
         heroes.forEach { hero ->
             val holder = HeroHolder(hero)

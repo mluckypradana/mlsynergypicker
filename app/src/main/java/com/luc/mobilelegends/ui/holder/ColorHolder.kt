@@ -26,6 +26,7 @@ open class ColorHolder {
         ABYSS -> R.color.bg_abyss
         CELESTIAL -> R.color.bg_celestial
         EMPIRE -> R.color.bg_empire
+        SHIFTER -> R.color.bg_shifter
         else -> R.color.bg_black
     }
 }

@@ -25,3 +25,4 @@ const val NORTH = 17
 const val ABYSS = 18
 const val CELESTIAL = 19
 const val EMPIRE = 20
+const val SHIFTER = 21
