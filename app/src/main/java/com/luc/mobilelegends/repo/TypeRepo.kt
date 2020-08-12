@@ -19,7 +19,7 @@ class TypeRepo() : CoreRepo() {
         list.add(Type(ASSASSIN, "Assassin"))
         list.add(Type(ELF, "Elf"))
         list.add(Type(DESERT, "Desert"))
-        list.add(Type(ERUDITIO, "Eruditio"))
+//        list.add(Type(ERUDITIO, "Eruditio"))
         list.add(Type(CYBORG, "Cyborg"))
         list.add(Type(DEMON, "Demon"))
         list.add(Type(DRAGON, "Dragon"))

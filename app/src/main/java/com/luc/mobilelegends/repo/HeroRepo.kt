@@ -18,7 +18,7 @@ class HeroRepo() : CoreRepo() {
         Hero("Tigreal", 3, listOf(TARGEMAN, EMPIRE), TANK),
         Hero("Miya", 1, listOf(MARKSMAN, ELF), PHYSICAL),
         Hero("Irithel", 5, listOf(MARKSMAN, ELF), PHYSICAL),
-        Hero("Claude", 4, listOf(MARKSMAN, DESERT, ERUDITIO), PHYSICAL),
+        Hero("Claude", 4, listOf(MARKSMAN, DESERT), PHYSICAL),
         Hero("Bruno", 4, listOf(MARKSMAN, CYBORG), PHYSICAL),
         Hero("Wanwan", 3, listOf(MARKSMAN, DRAGON), PHYSICAL),
         Hero("Moskov", 2, listOf(MARKSMAN, ABYSS), PHYSICAL),
