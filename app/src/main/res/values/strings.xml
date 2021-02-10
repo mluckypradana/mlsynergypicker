@@ -1,9 +1,23 @@
 <resources>
-    <string name="app_name">Mobile Legends Synergy Picker</string>
+    <string name="app_name">MLBB Rank Schedule</string>
     <string name="label_recommended_matches">Recommended Heroes</string>
     <string name="label_matches">Heroes</string>
     <string name="action_refresh">Refresh</string>
     <string name="label_recommended_item">Recommended Item</string>
     <string name="label_synergies">Synergies</string>
     <string name="app_id">ca-app-pub-5515586326829880~8358365070</string>
+    <string name="label_remaining_day">Remaining Day</string>
+    <string name="label_warrior">Warrior</string>
+    <string name="label_elite">Elite</string>
+    <string name="label_master">Master</string>
+    <string name="label_grand_master">Grandmaster</string>
+    <string name="label_epic">Epic</string>
+    <string name="label_legend">Legendary</string>
+    <string name="label_mythic">Mythic</string>
+    <string name="action_set_start_date">Set Start Season Date</string>
+    <string name="label_starting_rank">Starting Rank</string>
+    <string name="label_expected_rank">Expected Rank</string>
+    <string name="label_reset_date">Reset Date</string>
+    <string name="lable_power">Power</string>
+    <string name="banner_ad_unit_id">ca-app-pub-5515586326829880/7550218859</string>
 </resources>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "897958355235",
+    "firebase_url": "https://mlbb-rank-schedule.firebaseio.com",
+    "project_id": "mlbb-rank-schedule",
+    "storage_bucket": "mlbb-rank-schedule.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:897958355235:android:cf2d1a6274a454d007ac96",
+        "android_client_info": {
+          "package_name": "com.luc.mlbbrs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "897958355235-uqnqmgbi3577ti2efj61fnk9cfur8uk9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtWidxqJjrGJFR9iYY9iSWlSOmBn4Xj98"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "897958355235-uqnqmgbi3577ti2efj61fnk9cfur8uk9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

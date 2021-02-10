@@ -7,12 +7,12 @@
 
         <variable
             name="model"
-            type="com.luc.mobilelegends.ui.holder.SynergyHolder" />
+            type="com.luc.mlbbrs.ui.holder.SynergyHolder" />
 
 
         <variable
             name="handler"
-            type="com.luc.mobilelegends.core.BaseListAdapter.Holder" />
+            type="com.luc.mlbbrs.core.BaseListAdapter.Holder" />
 
         <variable
             name="position"

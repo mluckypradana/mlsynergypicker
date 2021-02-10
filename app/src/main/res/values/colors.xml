@@ -30,4 +30,5 @@
     <color name="bg_2_star">#427846</color>
     <color name="bg_1_star">#797E85</color>
     <color name="text_inverse">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
 </resources>

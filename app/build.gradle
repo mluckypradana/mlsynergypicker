@@ -2,19 +2,21 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: "kotlin-kapt"
+apply plugin: 'com.google.gms.google-services'
 
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.3"
 
     defaultConfig {
-        applicationId "com.luc.mobilelegends"
+        applicationId "com.luc.mlbbrs"
         minSdkVersion 18
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
     }
 
     buildTypes {
@@ -40,9 +42,17 @@ dependencies {
     implementation "org.koin:koin-core-ext:2.0.1"
     implementation "org.koin:koin-androidx-scope:2.0.1"
     implementation "org.koin:koin-androidx-viewmodel:2.0.1"
+    implementation 'com.google.android.material:material:1.3.0-alpha01'
+    implementation "com.orhanobut:hawk:2.0.1"
+    implementation 'com.google.firebase:firebase-ads:19.1.0'
     testImplementation 'junit:junit:4.13'
+    testImplementation "io.kotest:kotest-runner-junit5:4.1.0.RC2"
+    testImplementation "io.kotest:kotest-extensions-koin:4.1.0.RC2"
+    testImplementation 'org.koin:koin-core:2.0.1'
+
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    androidTestImplementation "org.koin:koin-test:2.0.1"
+    androidTestImplementation 'org.koin:koin-core:2.0.1'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
-    implementation 'com.google.android.gms:play-services-ads:19.1.0'
 }

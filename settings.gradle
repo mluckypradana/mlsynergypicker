@@ -1,2 +1,2 @@
-rootProject.name='Mobile Legends Synergy Picker'
+rootProject.name='MLBB Rank Schedule'
 include ':app'
